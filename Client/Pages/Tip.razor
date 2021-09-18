@@ -17,14 +17,19 @@
 
     private string TotalPrice { get; set; }
 
+        private float mealPrice = 0;
+        private float tax = 0;
+        private float tip = 0;
+        private float totalPrice = 0;
+
     private void CalculateTotal()
 
     {
 
-        float mealPrice = float.Parse(MealPrice);
-        float tax = mealPrice * .065;
-        float tip = mealPrice * .2;
-        float totalPrice = mealPrice + tax + tip;
+        mealPrice = float.Parse(MealPrice);
+        tax = mealPrice * .065;
+        tip = mealPrice * .2;
+        totalPrice = mealPrice + tax + tip;
 
         TotalPrice = totalPrice.toString();
 
