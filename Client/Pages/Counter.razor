@@ -6,21 +6,12 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
-<p>Running total: @runningTotal</p>
-
-<button class="btn btn-primary" @onclick="DoAddition">Or Click me!</button>
-
 @code {
     private int currentCount = 0;
-    private int runningTotal = 0;
 
     private void IncrementCount()
     {
         currentCount++;
     }
 
-    private void DoAddition()
-    {
-        runningTotal += currentCount;
-    }
 }

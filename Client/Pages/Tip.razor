@@ -1,0 +1,17 @@
+﻿@page "/counter"
+
+<h1>Tax and Tip Calculator</h1>
+
+<button class="btn btn-primary" @onclick="CalculateTotal">Calculate Total</button>
+
+
+@code {
+    private int currentCount = 0;
+    private int runningTotal = 0;
+
+    private void CalculateTotal()
+    {
+        currentCount++;
+    }
+
+}
