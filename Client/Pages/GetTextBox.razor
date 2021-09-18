@@ -1,0 +1,26 @@
+﻿@page "/GetTextBox"
+
+<h3>GetTextBox</h3>
+
+<input @bind="CurrentValue" />
+
+<p>Current count: @NewValue</p>
+
+<button class="btn btn-primary" @onclick="GetValuet">Click me</button>
+
+@code
+{
+
+    private string CurrentValue { get; set; }
+
+    private string NewValue { get; set; }
+
+    private void GetValuet()
+
+    {
+
+        NewValue = CurrentValue;
+
+    }
+
+}
