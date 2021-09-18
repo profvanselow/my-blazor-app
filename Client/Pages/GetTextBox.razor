@@ -1,12 +1,12 @@
 ﻿@page "/GetTextBox"
 
-<h3>GetTextBox</h3>
+<h3>Total Meal Price Calculator</h3>
 
 <input @bind="CurrentValue" />
 
 <p>Current count: @NewValue</p>
 
-<button class="btn btn-primary" @onclick="GetValuet">Click me</button>
+<button class="btn btn-primary" @onclick="GetValuet">Calculate Total</button>
 
 @code
 {
@@ -19,7 +19,8 @@
 
     {
         
-        float mealPrice = float.Parse(CurrentValue); 
+        float mealPrice = float.Parse(CurrentValue);
+        mealPrice = mealPrice + (mealPrice * .06) + (mealPrice * .2); 
         NewValue = mealPrice.ToString();
 
     }
