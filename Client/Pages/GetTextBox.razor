@@ -1,33 +1,26 @@
 ﻿@page "/GetTextBox"
 
-<h1>Meal Calculator</h1>
+<h3>GetTextBox</h3>
 
-<p>Enter the meal price to see the total with tax and tip</p>
+<input @bind="CurrentValue" />
 
-<input @bind="MealPrice" />
+<p>Current count: @NewValue</p>
 
-<p>Total price: @TotalPrice</p>
-
-<button class="btn btn-primary" @onclick="CalculateTotal">Calculate Total</button>
+<button class="btn btn-primary" @onclick="GetValuet">Click me</button>
 
 @code
 {
 
-    private string MealPrice { get; set; }
+    private string CurrentValue { get; set; }
 
-    private string TotalPrice { get; set; }
+    private string NewValue { get; set; }
 
-    private void CalculateTotal()
+    private void GetValuet()
 
     {
 
-        float mealPrice = float.Parse(MealPrice);
-        float tax = mealPrice * .065;
-        float tip = mealPrice * .2;
-        float totalPrice = mealPrice + tax + tip;
-
-        TotalPrice = totalPrice.toString();
+        NewValue = CurrentValue;
 
     }
 
-}
+} 
