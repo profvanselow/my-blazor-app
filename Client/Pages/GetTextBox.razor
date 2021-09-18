@@ -2,26 +2,28 @@
 
 <h3>Total Meal Price Calculator</h3>
 
-<input @bind="CurrentValue" />
+<p>Enter the price of the meal</p>
 
-<p>Current count: @NewValue</p>
+<input @bind="MealPriceInput" />
 
-<button class="btn btn-primary" @onclick="GetValuet">Calculate Total</button>
+<p>Total price with 6% tax and 20% tip: @NewValue</p>
+
+<button class="btn btn-primary" @onclick="CalculateTotal">Calculate Total</button>
 
 @code
 {
 
-    private string CurrentValue { get; set; }
+    private string MealPriceInput { get; set; }
 
-    private string NewValue { get; set; }
+    private string TotalPrice { get; set; }
 
-    private void GetValuet()
+    private void CalculateTotal()
 
     {
         
-        double mealPrice = double.Parse(CurrentValue);
+        double mealPrice = double.Parse(MealPriceInput);
         mealPrice = mealPrice + (mealPrice * .06) + (mealPrice * .2); 
-        NewValue = mealPrice.ToString();
+        TotalPrice = mealPrice.ToString();
 
     }
 
