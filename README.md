@@ -30,5 +30,5 @@ The deployed URL is https://white-hill-0dd1a1310.azurestaticapps.net/
 
 ## Updates
 
-IPO code from https://sites.google.com/site/profvanselow/programming/languages/c_1/blazor
-To Do list added from tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/build-a-blazor-app
+- IPO code from https://sites.google.com/site/profvanselow/programming/languages/c_1/blazor
+- To Do list added from tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/build-a-blazor-app
