@@ -6,10 +6,15 @@ This project started with a template containing an example [Blazor WebAssembly](
 
 I created a repository from the [GitHub template](https://docs.github.com/en/enterprise/2.22/user/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) and cloned it locally to my machine.
 
-Once I cloned the project, I opened the solution in [Visual Studio](https://visualstudio.microsoft.com/vs/preview/vs2022/) and followed these steps:
+I set up hosting on Azure following https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/
 
-- In the **API** folder, copy `local.settings.example.json` to `local.settings.json`
-- Press **F5** to launch both the client application and the Functions API app. In Visual Studio, you can right click the solution and select both API project and client project as startup projects. 
+I opened the solution in [Visual Studio](https://visualstudio.microsoft.com/vs/preview/vs2022/) and followed these steps:
+
+- right click Client in Solution Explorer and click Open in Terminal
+- enter dotnet watch run 
+
+This opened the app on my local machine so I could test modifications. 
+When the modifications work I commit and push to GitHub which triggers the workflow. 
 
 ## Template Structure
 
@@ -25,4 +30,5 @@ The deployed URL is https://white-hill-0dd1a1310.azurestaticapps.net/
 
 ## Updates
 
+IPO code from https://sites.google.com/site/profvanselow/programming/languages/c_1/blazor
 To Do list added from tutorial at https://docs.microsoft.com/en-us/aspnet/core/tutorials/build-a-blazor-app
