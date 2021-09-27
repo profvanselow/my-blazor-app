@@ -6,8 +6,6 @@ This project started with a template containing an example [Blazor WebAssembly](
 
 I created a repository from the [GitHub template](https://docs.github.com/en/enterprise/2.22/user/github/creating-cloning-and-archiving-repositories/creating-a-repository-from-a-template) and cloned it locally to my machine.
 
-I set up hosting on Azure following https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/
-
 I opened the solution in [Visual Studio](https://visualstudio.microsoft.com/vs/preview/vs2022/) and followed these steps:
 
 - right click Client in Solution Explorer and click Open in Terminal
@@ -25,6 +23,8 @@ When the modifications work I commit and push to GitHub which triggers the workf
 ## Deploy to Azure Static Web Apps
 
 This application was deployed to [Azure Static Web Apps](https://docs.microsoft.com/azure/static-web-apps) following a [quickstart guide](https://aka.ms/blazor-swa/quickstart).
+
+I set up hosting on Azure following https://devblogs.microsoft.com/aspnet/azure-static-web-apps-with-blazor/
 
 The deployed URL is https://white-hill-0dd1a1310.azurestaticapps.net/
 
