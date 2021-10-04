@@ -14,17 +14,19 @@
 
 <input placeholder="Something todo" @bind="newTodo" />
 <button @onclick="AddTodo">Add todo</button>
+<!-- HTML comments look like this -->
+
 
 @code {
+    // comment in C# after @code
     private List<TodoItem>
-    todos = new();
+todos = new();
     private string newTodo;
 
     private void AddTodo()
     {
         if (!string.IsNullOrWhiteSpace(newTodo))
         {
-            // comment
             todos.Add(new TodoItem { Title = newTodo });
             newTodo = string.Empty;
         }
